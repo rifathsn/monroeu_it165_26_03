@@ -1,0 +1,56 @@
+/* Styles for larger screens (default) */
+body {
+    font-size: 14px;
+}
+header {
+    background-color: #f0f0f0;
+    padding: 1em;
+}
+
+main {
+    padding: 2em;
+    background-color: #ffffff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 350px 350px;
+    gap: 1em;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 1em;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for larger screens */
+@media (max-width: 601px) {
+body {
+    font-size: 14px;
+}
+
+header {
+    background-color: #e27070;
+    color: #ffffff;
+    padding: 1em;
+}
+
+main {
+    padding: 2em;
+    color: #ffffff;
+    background-color: #a97c7c;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 350px 350px 350px 350px;
+    gap: 1em;
+}
+}
