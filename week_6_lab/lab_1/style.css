@@ -29,6 +29,46 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.transform-button {
+background-color: #f0f7fc;
+transition: background-color 0.3s ease-in-out 0s;
+}
+
+.transform-button:hover {
+background-color: #006fba;
+}
+
+@keyframes solar-pulse {
+0% {
+transform: scale(1);
+background-color: #f1c40f;
+box-shadow: 0 0 0 0px rgba(241, 196, 15, 0.7);
+}
+50% {
+transform: scale(1.15);
+background-color: #e67e22;
+box-shadow: 0 0 20px 15px rgba(230, 126, 34, 0);
+}
+100% {
+transform: scale(1);
+background-color: #f1c40f;
+box-shadow: 0 0 0 0px rgba(241, 196, 15, 0);
+}
+}
+.animate-button {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+/* Applying the animation */
+animation-name: solar-pulse;
+animation-duration: 4s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: forwards;
+}
+
+
 /* Styles for larger screens */
 @media (max-width: 601px) {
 body {
